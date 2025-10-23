@@ -10,7 +10,7 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   useGSAP(() => {
-    document.fonts.ready.then(() => {
+ 
       const heroSPlit = new SplitText(".title", { type: "chars, words" });
       const paragraphSplit = new SplitText(".subtitle", { type: "lines" });
 
@@ -39,6 +39,7 @@ const Hero = () => {
             start: "top top",
             end: "bottom top",
             scrub: true,
+  
           },
         })
         .to(".right-leaf", { y: 200 }, 0)
@@ -53,14 +54,16 @@ const Hero = () => {
           start: startValue,
           end: endValue,
           scrub: true,
+          pin: true
         },
       });
       videoRef.current.onloadedmetadata = () => {
         tl.to(videoRef.current, {
           currentTime: videoRef.current.duration,
         });
+
       };
-    });
+
   }, []);
 
   return (
@@ -100,7 +103,7 @@ const Hero = () => {
         </div>
       </section>
 
-        <div className="video fixed inset-0">
+        <div className="video absolute inset-0">
           <video
             ref={videoRef}
             src="/videos/output.mp4"
