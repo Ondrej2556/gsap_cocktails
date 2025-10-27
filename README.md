@@ -30,7 +30,7 @@ Cílem projektu nebylo vytvořit plně funkční produkt, ale **procvičit si pr
 ## 🚀 Instalace a spuštění
 
 1. Naklonuj repozitář:
-   git clone https://github.com/uzivatel/react-gsap-demo.git
+   git clone https://github.com/Ondrej2556/react-gsap-demo.git
    cd react-gsap-demo
 
 2. Nainstaluj závislosti:
