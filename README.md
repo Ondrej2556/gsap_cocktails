@@ -1,16 +1,41 @@
-# React + Vite
+# 🍸 Cocktail Menu — GSAP Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jednoduchá React aplikace, jejímž cílem bylo seznámit se s knihovnou **[GSAP (GreenSock Animation Platform)](https://greensock.com/gsap/)** a jejím pluginem **ScrollTrigger** pro tvorbu plynulých animací při scrollování.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 O projektu
 
-## React Compiler
+Tato aplikace zobrazuje interaktivní webovou stránku pro bar, kavárnu, atd..  
+Součástí je několik **GSAP animací**, například:
+- animace videa podle scrollování po stránce
+- animace listů při scrollování sekce menu,
+- plynulé přechody mezi jednotlivými koktejly,
+- testování `ScrollTrigger` a práce s DOM pomocí `useRef`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Cílem projektu nebylo vytvořit plně funkční produkt, ale **procvičit si práci s animacemi v Reactu** a pochopit, jak GSAP funguje v kombinaci s React hooky (`useEffect`, `useRef`, `useState`).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Použité technologie
+
+- ⚛️ **React** — UI knihovna
+- 💫 **GSAP + ScrollTrigger** — animace a interakce na scroll
+- 🧩 **Vite** — vývojové prostředí (rychlé bundlování)
+- 🎨 **Tailwind CSS** — jednoduché stylování
+- 🍹 Vlastní data o koktejlech (`allCocktails.js`)
+
+---
+
+## 🚀 Instalace a spuštění
+
+1. Naklonuj repozitář:
+   git clone https://github.com/uzivatel/react-gsap-demo.git
+   cd react-gsap-demo
+
+2. Nainstaluj závislosti:
+    npm install
+
+
+3. Spusť vývojový server:
+    npm run dev
